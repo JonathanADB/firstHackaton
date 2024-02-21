@@ -17,9 +17,9 @@ body {
 .footer-logo {
     display: inline-block;
     vertical-align: middle;
-    width: 200px;
+    width: 160px;
     max-width: 500px; /* Limitar el ancho del logo si es necesario */
-    margin-top: -6px;
+    margin-top: -3.5px;
     margin-left: -50px;
 }
 
