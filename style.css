@@ -4,6 +4,60 @@ body {
     font-family: Arial, sans-serif;
 }
 
+
+/* //--------------Filtro---------------- */
+
+
+.developer-filter {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #CCCCCC;
+    width: 250px;
+}
+
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.filter-options label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.filter-options input {
+    margin-right: 5px;
+}
+
+.filter-options input[type="text"] {
+    width: 100%;
+    padding: 15px; 
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+#filterButton {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    background-color: #0C322B;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+
+
+
+  /* //-------Footer---------------------- */
+
 .container-footer {
     background-color: #0C322B;
     color: #fff;
@@ -18,7 +72,7 @@ body {
     display: inline-block;
     vertical-align: middle;
     width: 160px;
-    max-width: 500px; /* Limitar el ancho del logo si es necesario */
+    max-width: 500px; 
     margin-top: -3.5px;
     margin-left: -50px;
 }
@@ -27,7 +81,7 @@ body {
     color: #fff;
     text-decoration: none;
     margin: 0 20px;
-    font-size: 18px; /* Aumentar el tamaño de la letra */
+    font-size: 18px; 
     margin: 200px;
 }
 
@@ -48,7 +102,7 @@ body {
     display: inline-block;
     color: #fff;
     text-decoration: none;
-    font-size: 20px; /* Aumentar el tamaño de la letra */
+    font-size: 20px;
 }
 
 
