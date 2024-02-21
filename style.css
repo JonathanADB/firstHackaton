@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container-footer {
+    background-color: #0C322B;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+    width: 100%; /* Hacer que el footer ocupe el 100% del ancho */
+    box-sizing: border-box; /* Incluir el padding en el ancho total */
+}
+
+.footer-logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 200px;
+    max-width: 500px; /* Limitar el ancho del logo si es necesario */
+    margin-top: -6px;
+    margin-left: -50px;
+}
+
+.terms-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px; /* Aumentar el tamaño de la letra */
+}
+
+.social-icons {
+    display: inline-block;
+    position: absolute;
+    right: 580px;
+    top: 48%;
+    transform: translateY(-50%);
+}
+
+.social-icons a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px; /* Aumentar el tamaño de la letra */
+}
+
+
+.logo{
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+}
+
+.logo_github{
+    height: 35px;
+    width: 35px;
+    padding: 8px
+}
