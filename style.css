@@ -11,7 +11,7 @@ body {
     padding: 40px;
     position: relative;
     width: 100%; /* Hacer que el footer ocupe el 100% del ancho */
-    box-sizing: border-box; /* Incluir el padding en el ancho total */
+    box-sizing: border-box; 
 }
 
 .footer-logo {
@@ -28,12 +28,18 @@ body {
     text-decoration: none;
     margin: 0 20px;
     font-size: 18px; /* Aumentar el tamaño de la letra */
+    margin: 200px;
+}
+
+.contenido-footer{
+    margin: 0 auto;
+    max-width: 1400px;
 }
 
 .social-icons {
     display: inline-block;
     position: absolute;
-    right: 580px;
+   
     top: 48%;
     transform: translateY(-50%);
 }
