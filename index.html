@@ -9,25 +9,25 @@
 </head>
 
 <body>
-    
+
     <nav class="navbar">
         <a class="marca" href="#">
             <img src="img/logomarca.svg" alt="Logo de Desmos">
         </a>
-        
+
         <div class="nav-enlaces">
             <ul class="nav-links">
                 <!-- <li class="nav-li"><a class="inicio" href="contacto.html">Iniciar sesión</a></li> -->
-                
+
                 <li class="nav-li"><a class="inicio" href="#" onclick="mostrarPopup()">Iniciar sesión</a></li>
                 <div id="popup" class="popup">
-                   
+
                     <div class="popup-content">
                         <video autoplay muted loop id="video-background">
                             <source src="img/video/Comp_1_1.mp4" type="video/mp4">
                             Tu navegador no admite el elemento de video.
                         </video>
-                      
+
                         <div class="contenedor_todo">
 
                             <div class="caja_trasera">
@@ -42,7 +42,7 @@
                                     <button id="btn_registrarse">Registrarse</button>
                                 </div>
                             </div>
-                
+
                             <div class="contenedor_loginRegister">
                                 <form action="" class="formulario_login">
                                     <h2>Iniciar Sesión</h2>
@@ -50,7 +50,7 @@
                                     <input id="passwordLogin" type="password" placeholder="Contraseña" required>
                                     <button>Ingresar</button>
                                 </form>
-                
+
                                 <form action="" class="formulario_register">
                                     <h2>Registrarse</h2>
                                     <input id="name" type="text" placeholder="Nombre Completo" required>
@@ -60,30 +60,30 @@
                                     <button>Registrarse</button>
                                 </form>
                             </div>
-                                  <!-- Botón para cerrar el popup -->
-                                    <button onclick="cerrarPopup()">Cerrar</button>
+                            <!-- Botón para cerrar el popup -->
+                            <button onclick="cerrarPopup()">Cerrar</button>
                         </div>
                     </div>
-                        
-                        <script>
-                                    // Función para mostrar el popup
-                                    function mostrarPopup() {
-                                    let popup = document.getElementById("popup");
-                                    popup.style.display = "block";
-                                    }
-                                    
-                                    // Función para cerrar el popup
-                                    function cerrarPopup() {
-                                    let popup = document.getElementById("popup");
-                                    popup.style.display = "none";
-                                    }
-                            </script>
-                
+
+                    <script>
+                        // Función para mostrar el popup
+                        function mostrarPopup() {
+                            let popup = document.getElementById("popup");
+                            popup.style.display = "block";
+                        }
+
+                        // Función para cerrar el popup
+                        function cerrarPopup() {
+                            let popup = document.getElementById("popup");
+                            popup.style.display = "none";
+                        }
+                    </script>
+
                 </div>
-                    
-                     
-                
-                <li class="nav-li"><a class="contactar" href="#">Contacto</a></li>
+
+
+
+                <li class="nav-li"><a class="contactar" href="Formulario-contactanos-miracle/formulario-contacto.html">Contacto</a></li>
             </ul>
             <button class="nav-button" type="button">Apúntate</button>
         </div>
@@ -97,22 +97,34 @@
     <!--Video logotipo de fondo , primera parte verde-->
 
     <div class="primeraZonaVerde_JI">
-        <div class="videoFondo_JI">
-            <video src="/img/logoAnimado.mp4" autoplay muted loop></video>
-        </div>
-        <div class="titulo_JI">
-            <h1>Desmos:</h1>
-            <h1>donde la colaboración cobra vida</h1>
+
+     
+
+        <div class="video-container">
+
+            <div class="titulo_JI">
             
+                <h1>Donde la colaboración cobra vida</h1>
+    
+            </div>
+
+            <div class="videoFondo_JI">
+                <video src="/img/logoAnimado.mp4" autoplay muted loop></video>
+                <!--El video importado establece por defecto un ancho excesivo, hay que ajustarlo en css -->
+            </div>
+
+           
         </div>
+
+   
         <div class="botonesFrase_JI">
-            <h2>Conectando profesionales como tú para intercambiar 
+            <h2 class="text-connect">Conectando profesionales como tú para intercambiar
                 servicios y ofertas de manera eficiente
             </h2>
             <div class="Botones_JI">
                 <button class="soy_JI">Soy un profesional</button>
                 <button class="Busco_JI">Busco a profesional</button>
-             </div>
+            </div>
         </div>
 
 
@@ -229,69 +241,39 @@
             <button>Busco a profesionales</button>
         </div>
 
-    </section>
+    </section <!-- -------Sección Para quien(2Cards)------ -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     <!-- -------Sección Para quien(2Cards)------ -->
-
-
-     <div class="contenedor-cards">
+    <div class="contenedor-cards">
         <!-- Card 1 -->
         <div class="card">
-          <img src="./img/buscarprofesionales.png" alt="Imagen 1">
-          <div class="descripcion">
-            <h2 class="h2cards">Para quien busca profesionales</h2>
-            <ul>
-                <li>Encuentra rápidamente a profesionales calificados para tus proyectos</li>
-                <li>Publica tus solicitudes y recibe ofertas competitivas en tiempo récord</li>
-                <li>Amplía tu red de contactos profesionales y accede a oportunidades exclusivas.</li>
-            </ul>
-             <button class="boton-circular" type="button">Soy un profesional</button>
-          </div>
+            <img src="./img/buscarprofesionales.png" alt="Imagen 1">
+            <div class="descripcion">
+                <h2 class="h2cards">Para quien busca profesionales</h2>
+                <ul>
+                    <li>Encuentra rápidamente a profesionales calificados para tus proyectos</li>
+                    <li>Publica tus solicitudes y recibe ofertas competitivas en tiempo récord</li>
+                    <li>Amplía tu red de contactos profesionales y accede a oportunidades exclusivas.</li>
+                </ul>
+                <button class="boton-circular" type="button">Soy un profesional</button>
+            </div>
         </div>
-      
+
         <!-- Card 2 -->
         <div class="card">
-          <img src="./img/paraprofesionales.png" alt="Imagen 2">
-          <div class="descripcion">
-            <h2 class="h2cards">Para profesionales</h2>
-            <ul>
-                <li>Destaca tu experiencia y habilidades para atraer más oportunidades de negocio.</li>
-                <li>Administra tus proyectos y comunicaciones de manera centralizada y eficiente.</li>
-                <li>Encuentra nuevos retos.</li>
-            </ul>
-            <button class="boton-circular-dos" type="button">Soy un profesional</button>
-          </div>
+            <img src="./img/paraprofesionales.png" alt="Imagen 2">
+            <div class="descripcion">
+                <h2 class="h2cards">Para profesionales</h2>
+                <ul>
+                    <li>Destaca tu experiencia y habilidades para atraer más oportunidades de negocio.</li>
+                    <li>Administra tus proyectos y comunicaciones de manera centralizada y eficiente.</li>
+                    <li>Encuentra nuevos retos.</li>
+                </ul>
+                <button class="boton-circular-dos" type="button">Soy un profesional</button>
+            </div>
         </div>
-      </div>
-
-
-
+    </div>
     <!-- Inicio footer -->
-
 
     <footer class="container-footer">
         <div class="contenido-footer">
@@ -312,9 +294,6 @@
         </div>
 
     </footer>
-
-
-
 
     <script src="./js/navbar.js"></script>
 

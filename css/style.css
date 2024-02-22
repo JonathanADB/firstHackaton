@@ -1,10 +1,8 @@
-
-
-
 .navbar {
     background-color: #0C322B;
     width: 100%;
-    height: 72px;
+    height: 50%;
+    /*antes estaba en 50px*/
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,10 +10,13 @@
     position: sticky;
     top: 0;
     z-index: 1;
+    background-color: red;
+    /*pruebas de longitud y cajas padre*/
 }
 
 .marca {
     margin-left: 98px;
+    background-color: black;
 }
 
 .nav-enlaces {
@@ -54,6 +55,7 @@
 .nav-button:hover {
     background-color: #C0EEE2;
 }
+
 
 .inicio:hover,
 .contactar:hover {
@@ -125,66 +127,137 @@
 
 /*------------Primera parte verde con video logo------------*/
 
-.primeraZonaVerde_JI{
+/*inicio de problema de ancho*/
+.primeraZonaVerde_JI {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 65rem;
+    height: auto;
+    /* Cambiado a 'auto' para ajustarse al contenido */
     align-items: center;
     color: white;
-}
-.videoFondo_JI{
-    position: absolute;
-    z-index: -2;
-    top: 0;
-}
-.titulo_JI{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 2rem;
-    line-height: 1rem;
-    margin-top: 5rem;
-    
+
+
+   
+
+
+
 
 }
-.botonesFrase_JI{
+
+.video-container {
+   
+    height: auto;
+    width: 100%;
+    max-width: 99.99%;
+    /* Ajusta el valor según tus necesidades */
+    margin: auto;
+    /* Centra el contenedor horizontalmente */
+
+    position: absolute;
+
+    
+}
+
+/* hay que manipular el video para que aparezca debajo del slogan*/
+.videoFondo_JI {
+    position: relative;
+    /*Cambiado a relativo para que se ajuste al contenedor*/
+    z-index: -2;
+
+    max-width: 100%;
+    overflow: hidden;
+
+
+    width: 100%;
+    height: auto;
+
+
+}
+
+/* ajusta el video dentro del container*/
+video {
+    width: 100%;
+    /* Ajusta el ancho del video al 100% del contenedor */
+    height: auto;
+    /* Mantiene la proporción original del video */
+    display: block;
+    /* Elimina los espacios en blanco debajo del video */
+}
+
+/*fin de problema de ancho*/
+
+.titulo_JI {
+    display: flex;
+    
+    justify-content: center;
+    
+    font-size: 2rem;
+    line-height: 1rem;
+
+
+    color: orange;
+    background-color: transparent;
+
+    position: absolute;
+    top: 15%;
+   left: 16%;
+
+
+   overflow:hidden;
+  
+  
+    z-index: 1; /* Asegura que el título esté sobre el video */
+}
+
+
+.botonesFrase_JI {
+    margin-top: 30rem; /* Espaciamiento superior para centrar correctamente los botones */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     bottom: 2rem;
     vertical-align: bottom;
-    margin-top: 20rem;
+    
+
+    
+    background-color: brown;
+
+  
 }
-.Botones_JI{
+
+
+
+.Botones_JI {
     display: flex;
     margin: 3rem;
-    
+
     width: 50%;
     justify-content: space-around;
 }
-.soy_JI{
-    text-decoration:none;
-    font-weight:600;
-    font-size:20px;
-    color:#ffffff;
+
+.soy_JI {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
     padding: 1rem;
-    background-color:#33D8B8;
+    background-color: #33D8B8;
     border-radius: 1rem 2rem;
 }
-.Busco_JI{
-    text-decoration:none;
-    font-weight:600;
-    font-size:20px;
-    color:#ffffff;
+
+.Busco_JI {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
     padding: 1rem;
-    background-color:transparent;
+    background-color: transparent;
     border-radius: 1rem 2rem;
-    border:0.3rem solid #33D8B8;
+    border: 0.3rem solid #33D8B8;
 }
-    
+
 
 
 
@@ -195,47 +268,50 @@
 /*probando pop up*/
 
 .popup {
-    display: none; /* Por defecto, el popup estará oculto */
+    display: none;
+    /* Por defecto, el popup estará oculto */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el efecto de fondo oscurecido */
-  }
-  
-  .popup-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente para el efecto de fondo oscurecido */
+}
+
+.popup-content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-   
+
     border-radius: 5px;
     text-align: center;
-  }
+}
 
 /*aqui empieza el css del login*/
 #video-background {
     position: fixed;
     right: 0;
     top: 0;
-    bottom:0;
+    bottom: 0;
     width: 100%;
     height: 100%;
-    min-width: 100%; 
+    min-width: 100%;
     min-height: 100%;
     z-index: -1;
-    
+
 }
-.contenedor_todo{
+
+.contenedor_todo {
     width: 100%;
     max-width: 80rem;
     margin: auto;
     position: relative;
 }
 
-.caja_trasera{
+.caja_trasera {
     height: 100%;
     width: 100%;
     padding: 10px 20px;
@@ -245,26 +321,26 @@
     background-color: rgba(51, 51, 51, 0);
 }
 
-.caja_trasera div{
+.caja_trasera div {
     margin: 100px 40px;
     color: aliceblue;
     transition: all 500ms;
 }
 
 .caja_trasera div p,
-.caja_trasera div button{
+.caja_trasera div button {
     margin-top: 30px;
 }
 
-.caja_trasera div h3{
+.caja_trasera div h3 {
     font-weight: 400;
     font-size: 26px;
 }
 
-.caja_trasera button{
+.caja_trasera button {
     padding: 10px 40px;
     border: 2px solid white;
-    background:transparent;
+    background: transparent;
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
@@ -273,13 +349,13 @@
     transition: all 300ms;
 }
 
-.caja_trasera button:hover{
+.caja_trasera button:hover {
     background-color: rgb(112, 126, 195);
-    color:black;
+    color: black;
 }
 
 /*formularios*/
-.contenedor_loginRegister{
+.contenedor_loginRegister {
     display: flex;
     align-items: center;
     width: 100%;
@@ -291,7 +367,7 @@
     transition: left 500ms cubic-bezier(0.075, 0.885, 0.320, 1.275);
 }
 
-.contenedor_loginRegister form{
+.contenedor_loginRegister form {
     width: 100%;
     padding: 80px 20px;
     background: rgb(72, 98, 132);
@@ -299,14 +375,14 @@
     border-radius: 20px;
 }
 
-.contenedor_loginRegister form h2{
+.contenedor_loginRegister form h2 {
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
     color: rgb(23, 10, 10);
 }
 
-.contenedor_loginRegister form input{
+.contenedor_loginRegister form input {
     width: 100%;
     margin-top: 20px;
     padding: 10px;
@@ -316,58 +392,58 @@
     outline: none;
 }
 
-.contenedor_loginRegister form button{
+.contenedor_loginRegister form button {
     padding: 10px 40px;
     margin-top: 40px;
     border: none;
     font-size: 14px;
-    background: rgb(22, 159, 137) ;
+    background: rgb(22, 159, 137);
     color: white;
     cursor: pointer;
     outline: none;
 
 }
 
-.formulario_login{
+.formulario_login {
     opacity: 1;
     display: block;
 }
 
-.formulario_register{
+.formulario_register {
     display: none;
 }
 
 /*trabajando en el responsive*/
 
-@media screen and (max-width: 850px){
-    main{
+@media screen and (max-width: 850px) {
+    main {
         margin-top: 50px;
     }
 
-    .caja_trasera{
+    .caja_trasera {
         max-width: 350px;
         height: 300px;
         flex-direction: column;
         margin: auto;
     }
 
-    .caja_trasera div{
+    .caja_trasera div {
         margin: 0px;
         position: absolute;
     }
 
     /*formularios responsive*/
-    .contenedor_loginRegister{
+    .contenedor_loginRegister {
         top: -10px;
         left: -5px;
         margin: auto;
     }
 
-    .contenedor_loginRegister form{
+    .contenedor_loginRegister form {
         position: relative;
     }
 }
-  
+
 
 
 
@@ -549,11 +625,12 @@
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
-  }
+}
 
 .card {
     box-sizing: border-box;
-    width: 45%; /* Ajusta el ancho según tus necesidades */
+    width: 45%;
+    /* Ajusta el ancho según tus necesidades */
     margin: 10px;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -561,59 +638,67 @@
     background-color: #F8FAFC;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-  }
-  
-  .card img {
+}
+
+.card img {
     width: 100%;
     height: auto;
-    border-bottom: 1px solid #ddd; /* Borde leve en la parte inferior de la imagen */
-  }
-  
-  .descripcion {
-    padding: 10px;
-    line-height:1.5;
-  }
+    border-bottom: 1px solid #ddd;
+    /* Borde leve en la parte inferior de la imagen */
+}
 
-  .boton-circular, .boton-circular-dos {
+.descripcion {
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.boton-circular,
+.boton-circular-dos {
     width: 200px;
     height: 35px;
     background-color: #33D8B8;
     color: #0C322B;
     border: none;
-    border-radius: 50px; /* Hace que el botón sea circular */
+    border-radius: 50px;
+    /* Hace que el botón sea circular */
     cursor: pointer;
     margin-left: 5%;
     cursor: pointer;
-    font-weight: bold; 
+    font-weight: bold;
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .boton-circular:hover {
+}
+
+.boton-circular:hover {
     background-color: #2980b9;
-    transform: scale(1.1); /* Efecto de escala */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    transform: scale(1.1);
+    /* Efecto de escala */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Sombra */
     color: white;
-  }
+}
 
-  .boton-circular-dos:hover {
+.boton-circular-dos:hover {
     background-color: #2980b9;
-    transform: scale(1.1); /* Efecto de escala */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
-  }
+    transform: scale(1.1);
+    /* Efecto de escala */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Sombra */
+}
 
 
-  .boton-circular{
+.boton-circular {
     margin-top: 4%;
-  }
-   .boton-circular-dos{
+}
+
+.boton-circular-dos {
     background-color: #0C322B;
     color: white;
-   }
+}
 
 
-   .h2cards{
+.h2cards {
     margin-left: 3%;
-   }
+}
 
 
 /* //-------Footer---------------------- */
@@ -775,3 +860,7 @@
         padding: 10px;
     }
 }
+
+/*la parte verde NO e sel problema del exceso de margen. Sospecho que pueda ser el html,por descarte*/
+/*si borramos de la linea 97 a la 120 del HTML el problema del exceso de ancho desaparece. Puede que el problema surja a partir del formato del video mismo y no del css*/
+/*De hecho, si quitamos el src del video, linea 101, el problema de exceso de ancho desaparece al margen de loq ue haya en el css. Una posible solucion es adaptar el formato del video mp4 que importamos. Otra solucion es cabiar el video*/
