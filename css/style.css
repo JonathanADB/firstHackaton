@@ -215,16 +215,18 @@
 }
 
 
-.logo{
+.logo-footer{
     height: 30px;
     width: 30px;
-    padding: 10px;
+    padding: 20px;
+ 
 }
 
 .logo_grande{
-    height: 35px;
-    width: 35px;
-    padding: 8px
+    height: 32px;
+    width: 32px;
+    padding: 20px;
+
 }
 
 
@@ -257,9 +259,9 @@
         margin: 7px; 
         margin-top: 10%;
     }
-    .logo{
-        height: 22px;
-        width: 22px;
+    .logo-footer{
+        height: 20px;
+        width: 20px;
         padding: 10px;
     }
     
@@ -281,6 +283,33 @@
 }
 
 
+/* Estilos específicos para pantallas con un ancho de 755px a 1265px */
+@media only screen and (min-width: 750px) and (max-width: 1295px) {
+    .footer-logo {
+        display: block;
+        margin: 0 auto;
+      
+    }
 
+    .contenido-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra horizontalmente el contenido */
+        height: 150px;
+    }
 
-
+    .social-icons {
+        text-align: center;
+        margin-left: 0; /* Reinicia el margen izquierdo */
+        margin-top: 30px;
+        padding: 10px;
+    }
+    .footer-logo-container{
+       display: flex;
+       height: 40px;
+    }
+    .terms-link{
+        margin-top: -1px;
+        padding: 10px;
+    }
+}
