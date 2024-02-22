@@ -1,8 +1,7 @@
 .navbar {
     background-color: #0C322B;
     width: 100%;
-    height: 50%;
-    /*antes estaba en 50px*/
+    height: 74px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -10,13 +9,11 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: red;
-    /*pruebas de longitud y cajas padre*/
+    background-color:#0C322B;
 }
 
 .marca {
     margin-left: 98px;
-    background-color: black;
 }
 
 .nav-enlaces {
@@ -76,7 +73,7 @@
     margin-right: 30px;
 }
 
-.burger>div {
+.burger > div {
     height: 4px;
     background-color: #33D8B8;
 }
@@ -101,7 +98,7 @@
         position: absolute;
         right: 8px;
         top: 80px;
-        background-color: #0C322B;
+        background-color:red;
         width: 150px;
         height: 200px;
         padding-bottom: 30px;
@@ -180,7 +177,6 @@
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    line-height: 1rem;
     text-align: center;
     width: 60%;
     color: orange;
