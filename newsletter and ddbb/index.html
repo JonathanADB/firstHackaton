@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesAlba.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <a class="marca" href="#">
+        <img src="logomarca.svg" alt="Logo de Desmos">
+    </a>
+    <div class="nav-enlaces">
+        <ul class="nav-links">
+            <li class="nav-li"><a class="inicio" href="contacto.html">Iniciar sesión</a></li>
+            <li class="nav-li"><a class="contactar" href="#">Contacto</a></li>
+        </ul>
+        <button class="nav-button" id="openModalButton">Apúntate</button>
+    </div>
+    <div class="burger" onclick="toggleNav()">
+        <div class="burger-first"></div>
+        <div class="burger-second"></div>
+        <div class="burger-last"></div>
+    </div>
+</nav>
+
+<div class="modal" id="myModal">
+    <div class="modal-close-overlay" onclick="closeModal()"></div>
+    <div class="modal-content">
+        <button class="modal-close-btn" onclick="closeModal()">
+            <ion-icon name="close-outline"></ion-icon>
+        </button>
+        <div class="newsletter-img">
+            <img src="./equipofeliz.jpg" alt="subscribe newsletter" width="400" height="200">
+        </div>
+        <div class="newsletter">
+            <form action="#">
+                <div class="newsletter-header">
+                    <h3 class="newsletter-title">Apúntate al lanzamiento de Desmos</h3>
+                    <p class="newsletter-desc">
+                        Suscríbete a <b>Desmos</b> para obtener las últimas ofertas.
+                    </p>
+                </div>
+                <input type="email" name="email" class="email-field" placeholder="Email Address" required>
+                <button type="submit" class="btn-newsletter">Suscripción</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<section class="listaservicios">
+    <h1>Lista de Servicios</h1>
+    <table id="servicesTable">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Título</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody id="servicesBody">
+            <!-- Aquí se llenarán los datos -->
+        </tbody>
+    </table>
+</section>
+
+<footer class="container-footer">
+    <div class="contenido-footer">
+        <div class="footer-logo-container">
+            <img src="./logomarca.svg" alt="Logo de la empresa" class="footer-logo">
+        </div>
+        <a href="terminos_y_condiciones.html" class="terms-link">©2024 Desmos | Aviso legal | Política de Privacidad | Política de cookies</a>
+        <div class="social-icons">
+            <a href="https://es-es.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="https://twitter.com/"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="https://github.com/BeatrizCPerez/Desmos"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
+    </div>
+</footer>
+
+<script src="./scriptsAlba.js"></script>
+
+</body>
+</html>
