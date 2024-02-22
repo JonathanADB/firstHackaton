@@ -117,3 +117,61 @@ body {
     width: 35px;
     padding: 8px
 }
+
+
+
+@media only screen and (max-width: 1000px) {
+    .footer-logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .terms-link {
+        font-size: 14px;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .contenido-footer {
+        flex-direction: row; 
+        justify-content: space-between; 
+    }
+
+    .social-icons {
+        position: static; 
+        text-align: center; 
+        margin-top: 20px; 
+    }
+
+    .social-icons a {
+        display: inline-block;
+        margin: 7px; 
+        margin-top: 10%;
+    }
+    .logo{
+        height: 22px;
+        width: 22px;
+        padding: 10px;
+    }
+    
+    .logo_grande{
+        height: 24px;
+        width: 24px;
+        padding: 10px;
+    }
+    .developer-filter {
+        flex-direction: column;
+    }
+
+    .filter-section {
+        width: 100%; 
+        margin-bottom: 15px; 
+    }
+
+    
+}
+
+
+
+
+
