@@ -127,7 +127,6 @@
 
 /*------------Primera parte verde con video logo------------*/
 
-/*inicio de problema de ancho*/
 .primeraZonaVerde_JI {
     display: flex;
     flex-direction: column;
@@ -136,83 +135,27 @@
     /* Cambiado a 'auto' para ajustarse al contenido */
     align-items: center;
     color: white;
-
-
-   
-
-
-
-
 }
 
-.video-container {
-   
-    height: auto;
-    width: 100%;
-    max-width: 99.99%;
-    /* Ajusta el valor según tus necesidades */
-    margin: auto;
-    /* Centra el contenedor horizontalmente */
-
-    position: absolute;
-
-    
-}
-
-/* hay que manipular el video para que aparezca debajo del slogan*/
 .videoFondo_JI {
-    position: relative;
-    /*Cambiado a relativo para que se ajuste al contenedor*/
+    position: absolute;
     z-index: -2;
-
-    max-width: 100%;
-    overflow: hidden;
-
-
-    width: 100%;
-    height: auto;
-
-
+    top: 0;
 }
-
-/* ajusta el video dentro del container*/
-video {
-    width: 100%;
-    /* Ajusta el ancho del video al 100% del contenedor */
-    height: auto;
-    /* Mantiene la proporción original del video */
-    display: block;
-    /* Elimina los espacios en blanco debajo del video */
-}
-
-/*fin de problema de ancho*/
 
 .titulo_JI {
     display: flex;
-    
+    align-items: center;
     justify-content: center;
-    
+    flex-direction: column;
     font-size: 2rem;
     line-height: 1rem;
+    margin-top: 5rem;
 
 
-    color: orange;
-    background-color: transparent;
-
-    position: absolute;
-    top: 15%;
-   left: 16%;
-
-
-   overflow:hidden;
-  
-  
- 
 }
 
-
 .botonesFrase_JI {
-    margin-top: 30rem; /* Espaciamiento superior para centrar correctamente los botones */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -226,8 +169,6 @@ video {
 
   
 }
-
-
 
 .Botones_JI {
     display: flex;
@@ -677,13 +618,85 @@ video {
     background-color: #0C322B;
     text-align: center;
     height: 414px;
+    width: 100%;
 }
 
 .textunete {
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
     color: white;
     padding-top: 120px;
     padding-bottom: 30px;
+}
+
+.unete-h2 {
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.conectando-h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.soy-button {
+    width: 200px;
+    height: 35px;
+    background-color: #33D8B8;
+    color: #0C322B;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.busco-button {
+    width: 200px;
+    height: 35px;
+    background-color: #33D8B8;
+    color: #0C322B;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: 5%;
+    font-weight: bold;
+}
+
+.soy-button:hover,
+.busco-button:hover {
+    background-color: #C0EEE2;
+}
+
+@media screen and (max-width: 530px) {
+
+    .textunete {
+        padding-top: 20px;
+    }
+
+    .unete-h2,
+    .conectando-h3 {
+        padding: 0 70px;
+    }
+
+    .buttons {
+        width: 328px;
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .busco-button {
+        margin-left: 0;
+        margin-top: 20px;
+    }
 }
 
 
@@ -701,6 +714,7 @@ video {
 .card {
     box-sizing: border-box;
     width: 45%;
+    /* Ajusta el ancho según tus necesidades */
     margin: 10px;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -714,6 +728,7 @@ video {
     width: 100%;
     height: auto;
     border-bottom: 1px solid #ddd;
+    /* Borde leve en la parte inferior de la imagen */
 }
 
 .descripcion {
@@ -729,6 +744,7 @@ video {
     color: #0C322B;
     border: none;
     border-radius: 50px;
+    /* Hace que el botón sea circular */
     cursor: pointer;
     margin-left: 5%;
     cursor: pointer;
@@ -736,13 +752,23 @@ video {
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
-.boton-circular:hover,
+.boton-circular:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+    /* Efecto de escala */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Sombra */
+    color: white;
+}
+
 .boton-circular-dos:hover {
     background-color: #2980b9;
     transform: scale(1.1);
+    /* Efecto de escala */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    color: white;
+    /* Sombra */
 }
+
 
 .boton-circular {
     margin-top: 4%;
@@ -757,11 +783,34 @@ video {
     margin-left: 3%;
 }
 
-@media screen and (max-width: 768px) {
-    .card {
-        width: 100%;
-    }
+
+/* ---------sección final (verde claro)---------------------- */
+.conectando {
+    background-color: #C0EEE2;
+    text-align: center;
+    height: 336px;
+    width: 100%;
 }
+
+.text-conectando {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #0C322B;
+    padding: 90px 0;
+}
+
+.desmos-h2 {
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.conectando-h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+
 
 
 /* //-------Footer---------------------- */
