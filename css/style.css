@@ -527,9 +527,53 @@
 
 .textunete {
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
     color: white;
     padding-top: 120px;
     padding-bottom: 30px;
+}
+
+.unete-h2{
+    font-weight: 300;
+    font-size: 32px;}
+
+.conectando-h3{ 
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 30px;}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.soy-button{
+    width: 200px;
+    height: 35px;
+    background-color: #33D8B8;
+    color: #0C322B;
+    border: none;
+    border-radius: 50px; 
+    cursor: pointer;
+    font-weight: bold; 
+}
+
+.busco-button{
+    width: 200px;
+    height: 35px;
+    background-color: #33D8B8;
+    color: #0C322B;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: 5%;
+    font-weight: bold;
+}
+
+.soy-button:hover, .busco-button:hover{
+    background-color: #C0EEE2;
 }
 
 
