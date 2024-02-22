@@ -232,20 +232,20 @@
 
 
 /*probando pop up*/
-
+/* 
 .popup {
     display: none;
     /* Por defecto, el popup estará oculto */
-    position: fixed;
+    /* position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Fondo semitransparente para el efecto de fondo oscurecido */
-}
+    /* Fondo semitransparente para el efecto de fondo oscurecido 
+} */
 
-.popup-content {
+/* .popup-content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -254,7 +254,7 @@
 
     border-radius: 5px;
     text-align: center;
-}
+} */ 
 
 /*aqui empieza el css del login*/
 #video-background {
