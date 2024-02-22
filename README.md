@@ -42,7 +42,7 @@ https://github.com/MiracleMalachi
 https://github.com/AlbaPardo
 https://github.com/Jonathan
 
-📚Metodología:
+📚METODOLOGÍA:
 Metodología Agile con Scrum.
 Mob Programming.
 Solo Programming.
