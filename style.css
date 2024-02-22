@@ -62,7 +62,7 @@ body {
 /*-------------------------- Información web ---------------------*/
 .info-web {
     width: calc(100% - 250px - 40px);
-    padding: 20px;
+    padding: 80px;
     position: relative;
     display: flex;
     justify-content: left;
@@ -74,11 +74,13 @@ body {
 .info-web p {
     text-align: left;
     margin-left: 20px;
+    margin-right: 150px;
 }
 
-h2 {
+.info-web h2 {
     padding-top: 60px;
     color: #0C322B;
+    margin-bottom: 40px;
 }
 
 .images-container {
@@ -102,9 +104,6 @@ h2 {
 .img-girl {
     padding-bottom: 40px;
 }
-
-
-
 
 /* //-------Footer---------------------- */
 
