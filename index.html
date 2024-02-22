@@ -1,11 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document.</title>
+    <title>Desmos</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+    <nav class="navbar">
+        <a class="marca" href="#">
+            <img src="img/logomarca.svg" alt="Logo de Desmos">
+        </a>
+        <div class="nav-enlaces">
+            <ul class="nav-links">
+                <li class="nav-li"><a class="inicio" href="contacto.html">Iniciar sesión</a></li>
+                <li class="nav-li"><a class="contactar" href="#">Contacto</a></li>
+            </ul>
+            <button class="nav-button" type="button">Apúntate</button>
+        </div>
+        <div class="burger" onclick="toggleNav()">
+            <div class="burger-first"></div>
+            <div class="burger-second"></div>
+            <div class="burger-last"></div>
+        </div>
+    </nav>
+
+    <!-- Inicio filtro -->
+    <div class="container">
+        <div class="developer-filter">
+            <div class="filter-section">
+                <h3>Desarrolladores Disponibles</h3>
+            </div>
+            <div class="filter-section">
+                <h3>Por Tecnología</h3>
+                <div class="filter-options">
+                    <label><input type="checkbox" value="javascript"> JavaScript</label>
+                    <label><input type="checkbox" value="python"> Python</label>
+                    <label><input type="checkbox" value="java"> Java</label>
+                    <label><input type="checkbox" value="cpp"> C++</label>
+                    <label><input type="checkbox" value=".net"> .NET</label>
+                    <label><input type="checkbox" value="bootstrap"> Bootstrap</label>
+                    <label><input type="checkbox" value="react"> React</label>
+                    <label><input type="checkbox" value="vue"> Vue</label>
+                    <label><input type="checkbox" value="angular"> Angular</label>
+                    <label><input type="checkbox" value="cobol"> COBOL</label>
+                </div>
+            </div>
+            <div class="filter-section">
+                <h3>Valoración Alta</h3>
+                <div class="filter-options">
+                    <label><input type="radio" name="rating" value="asc"> Menor a Mayor</label>
+                    <label><input type="radio" name="rating" value="desc"> Mayor a Menor</label>
+                </div>
+            </div>
+            <div class="filter-section">
+                <h3>Proyectos Recientes</h3>
+                <div class="filter-options">
+                    <label><input type="checkbox" value="web"> Página Web</label>
+                    <label><input type="checkbox" value="mobile"> Aplicación Móvil</label>
+                    <label><input type="checkbox" value="backend"> Backend</label>
+                    <label><input type="checkbox" value="frontend"> Frontend</label>
+                    <label><input type="checkbox" value="online-store"> Tienda Online</label>
+                    <label><input type="checkbox" value="Landing Page"> Landing Page</label>
+                </div>
+            </div>
+            <div class="filter-section">
+                <h3>Buscar</h3>
+                <input type="text" placeholder="Buscar...">
+                <button id="searchButton">Buscar</button>
+            </div>
+            <div class="filter-section">
+                <button id="filterButton">Filtrar</button>
+            </div>
+        </div>
+
+        <div class="info-web">
+            <div>
+                <div class="images-container">
+                    <img src="./img/girl_infoweb.png" alt="Chica con portátil" class="img-girl">
+                    <img src="./img/boy_infoweb.png" alt="Chico con portátil" class="img-boy">
+                </div>
+                <h1>Descubre una nueva forma de encontrar y ofrecer servicios</h1>
+                <p>Somos una plataforma online diseñada <strong>para facilitar el intercambio de servicios entre
+                        profesionales</strong> de diversos sectores. Conectamos a demandantes de servicios con
+                    proveedores
+                    profesionales</strong> de diversos sectores.</p>
+                <p>Conectamos a demandantes de servicios con proveedores
+                    adecuados,
+                    ofreciendo una alternativa innovadora a las plataformas tradicionales de freelance.</p>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="intersection1">
+                <h1>Nuestro objetivo es simplificar conexión entre la búsqueda de profesionales y la oferta de nuevas
+                    oportunidades.</h1>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <div>
+                <div class="funtion-infoweb">
+                </div>
+                <h1>¿Cómo funciona?</h1>
+                <img src="./img/2boy_infoweb.svg" alt="2 chicos felices mirando el ordenador" class="img-2boy">
+                <div>
+                    <h2>✅Publica tu solicitud</h2>
+                    <p>Describe el servicio que necesitas o la oferta que deseas compartir.</p>
+                </div>
+                <div>
+                    <h2>✅Encuentra a tu profesional</h2>
+                    <p>Nuestra plataforma identifica a los proveedores más adecuados para tus necesidades.</p>
+                </div>
+                <div>
+                    <h2>✅Haz tus negocios</h2>
+                    <p>Comunícate directamente con los profesionales, negocia los términos y completa la transacción de
+                        manera segura.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Inicio footer -->
+
+
+   <footer class="container-footer">
+    <div class="contenido-footer">
+      <div class="footer-logo-container">
+          <img src="./img/logomarca.svg" alt="Logo de la empresa" class="footer-logo">
+      </div>
+      <a href="terminos_y_condiciones.html" class="terms-link">©2024 Desmos | Aviso legal | Política de Privacidad | Política de cookies</a>
+      <div class="social-icons">
+          <a href="https://es-es.facebook.com/"><img src="./img/facebook.png" alt="Facebook" class="logo-footer"></a>
+          <a href="https://twitter.com/"><img src="./img/twitter.png" alt="Twitter" class="logo-footer"></a>
+          <a href="https://github.com/BeatrizCPerez/Desmos"><img src="./img/github.png" alt="Github" class="logo_grande"></a>
+          <a href="https://www.instagram.com/"><img src="./img/instagram.png" alt="Instagram" class="logo_grande"></a>
+      </div>
+  </div>
+  
+    </footer>
+
+
+
+
+    <script src="./js/navbar.js"></script>
+
+
 </body>
+
 </html>
