@@ -162,7 +162,61 @@
     width: 100%;
 }
 
+/*-------------------------- Información web ---------------------*/
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row; 
+}
 
+.info-web {
+    width: calc(100% - 250px - 40px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.images-container {
+    display: flex;
+    align-items: flex-end;
+    top: 70px;
+    right: 20px;
+    float: right;
+    padding-top: 40px;
+}
+
+.images-container img {
+    width: 250px;
+    height: auto;
+}
+
+.info-web h1,
+.info-web p {
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 150px;
+}
+
+.info-web h1 {
+    padding-top: 60px;
+    color: #0C322B;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.info-web p {
+    font-size: 25px;
+}
+
+.img-boy {
+    padding-top: 30px;
+}
+
+.img-girl {
+    padding-bottom: 50px;
+}
 
 
   /* //-------Footer---------------------- */
@@ -180,8 +234,8 @@
 .footer-logo {
     display: inline-block;
     vertical-align: middle;
-    width: 160px;
-    max-width: 500px; 
+    width: 140px;
+    height: 40px; 
     margin-top: -3.5px;
     margin-left: -50px;
 }
@@ -284,7 +338,7 @@
 
 
 /* Estilos específicos para pantallas con un ancho de 755px a 1265px */
-@media only screen and (min-width: 750px) and (max-width: 1531px) {
+@media only screen and (min-width: 745px) and (max-width: 1531px) {
     .footer-logo {
         display: block;
         margin: 0 auto;
