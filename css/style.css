@@ -1,3 +1,6 @@
+
+
+
 .navbar {
     background-color: #0C322B;
     width: 100%;
@@ -6,6 +9,8 @@
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
+    position: sticky;
+    top: 0;
 }
 
 .marca {
