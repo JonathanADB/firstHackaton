@@ -207,7 +207,7 @@ video {
    overflow:hidden;
   
   
-    z-index: 1; /* Asegura que el título esté sobre el video */
+ 
 }
 
 
@@ -219,10 +219,10 @@ video {
     align-items: center;
     bottom: 2rem;
     vertical-align: bottom;
-    
+    margin-bottom: 6rem;
 
     
-    background-color: brown;
+
 
   
 }
