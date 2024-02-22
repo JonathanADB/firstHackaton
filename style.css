@@ -4,6 +4,12 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 
 /* //--------------Filtro---------------- */
 
@@ -37,7 +43,7 @@ body {
 
 .filter-options input[type="text"] {
     width: 100%;
-    padding: 15px; 
+    padding: 15px;
     box-sizing: border-box;
     margin-top: 10px;
 }
@@ -53,10 +59,54 @@ body {
     width: 100%;
 }
 
+/*-------------------------- Información web ---------------------*/
+.info-web {
+    width: calc(100% - 250px - 40px);
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    float: left;
+}
+
+.info-web h2,
+.info-web p {
+    text-align: left;
+    margin-left: 20px;
+}
+
+h2 {
+    padding-top: 60px;
+    color: #0C322B;
+}
+
+.images-container {
+    display: flex;
+    align-items: flex-end;
+    top: 70px;
+    right: 20px;
+    float: right;
+}
+
+
+.images-container img {
+    width: 200px;
+    height: auto;
+}
+
+.img-boy {
+    padding-top: 20px;
+}
+
+.img-girl {
+    padding-bottom: 40px;
+}
 
 
 
-  /* //-------Footer---------------------- */
+
+/* //-------Footer---------------------- */
 
 .container-footer {
     background-color: #0C322B;
@@ -64,15 +114,16 @@ body {
     text-align: center;
     padding: 40px;
     position: relative;
-    width: 100%; /* Hacer que el footer ocupe el 100% del ancho */
-    box-sizing: border-box; 
+    width: 100%;
+    /* Hacer que el footer ocupe el 100% del ancho */
+    box-sizing: border-box;
 }
 
 .footer-logo {
     display: inline-block;
     vertical-align: middle;
     width: 160px;
-    max-width: 500px; 
+    max-width: 500px;
     margin-top: -3.5px;
     margin-left: -50px;
 }
@@ -81,11 +132,11 @@ body {
     color: #fff;
     text-decoration: none;
     margin: 0 20px;
-    font-size: 18px; 
+    font-size: 18px;
     margin: 200px;
 }
 
-.contenido-footer{
+.contenido-footer {
     margin: 0 auto;
     max-width: 1400px;
 }
@@ -93,7 +144,7 @@ body {
 .social-icons {
     display: inline-block;
     position: absolute;
-   
+
     top: 48%;
     transform: translateY(-50%);
 }
@@ -106,13 +157,13 @@ body {
 }
 
 
-.logo{
+.logo {
     height: 30px;
     width: 30px;
     padding: 10px;
 }
 
-.logo_grande{
+.logo_grande {
     height: 35px;
     width: 35px;
     padding: 8px

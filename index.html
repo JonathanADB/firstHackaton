@@ -1,77 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desmos</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desmos</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+  <div class="container">
     <div class="developer-filter">
-        <div class="filter-section">
-          <h3>Desarrolladores Disponibles</h3>
-        </div>
-        <div class="filter-section">
-          <h3>Por Tecnología</h3>
-          <div class="filter-options">
-            <label><input type="checkbox" value="javascript"> JavaScript</label>
-            <label><input type="checkbox" value="python"> Python</label>
-            <label><input type="checkbox" value="java"> Java</label>
-            <label><input type="checkbox" value="cpp"> C++</label>
-            <label><input type="checkbox" value=".net"> .NET</label>
-            <label><input type="checkbox" value="bootstrap"> Bootstrap</label>
-            <label><input type="checkbox" value="react"> React</label>
-            <label><input type="checkbox" value="vue"> Vue</label>
-            <label><input type="checkbox" value="angular"> Angular</label>
-            <label><input type="checkbox" value="cobol"> COBOL</label>
-          </div>
-        </div>
-        <div class="filter-section">
-          <h3>Valoración Alta</h3>
-          <div class="filter-options">
-            <label><input type="radio" name="rating" value="asc"> Menor a Mayor</label>
-            <label><input type="radio" name="rating" value="desc"> Mayor a Menor</label>
-          </div>
-        </div>
-        <div class="filter-section">
-          <h3>Proyectos Recientes</h3>
-          <div class="filter-options">
-            <label><input type="checkbox" value="web"> Página Web</label>
-            <label><input type="checkbox" value="mobile"> Aplicación Móvil</label>
-            <label><input type="checkbox" value="backend"> Backend</label>
-            <label><input type="checkbox" value="frontend"> Frontend</label>
-            <label><input type="checkbox" value="online-store"> Tienda Online</label>
-            <label><input type="checkbox" value="Landing Page"> Landing Page</label>
-          </div>
-        </div>
-        <div class="filter-section">
-          <h3>Buscar</h3>
-          <input type="text" placeholder="Buscar...">
-          <button id="searchButton">Buscar</button>
-        </div>
-        <div class="filter-section">
-          <button id="filterButton">Filtrar</button>
+      <div class="filter-section">
+        <h3>Desarrolladores Disponibles</h3>
+      </div>
+      <div class="filter-section">
+        <h3>Por Tecnología</h3>
+        <div class="filter-options">
+          <label><input type="checkbox" value="javascript"> JavaScript</label>
+          <label><input type="checkbox" value="python"> Python</label>
+          <label><input type="checkbox" value="java"> Java</label>
+          <label><input type="checkbox" value="cpp"> C++</label>
+          <label><input type="checkbox" value=".net"> .NET</label>
+          <label><input type="checkbox" value="bootstrap"> Bootstrap</label>
+          <label><input type="checkbox" value="react"> React</label>
+          <label><input type="checkbox" value="vue"> Vue</label>
+          <label><input type="checkbox" value="angular"> Angular</label>
+          <label><input type="checkbox" value="cobol"> COBOL</label>
         </div>
       </div>
-      
-      
-      
-      
-
-   <footer class="container-footer">
-        <div class="contenido-footer">
-        <img src="./img/logo_Desmos.png" alt="Logo de la empresa" class="footer-logo">
-        <a href="terminos_y_condiciones.html" class="terms-link">©2024 Desmos | Aviso legal | Política de Privacidad | Política de cookies</a>
-        <div class="social-icons">
-            <a href="https://es-es.facebook.com/"><img src="./img/facebook.png" alt="Facebook" class="logo"></a>
-            <a href="https://twitter.com/"><img src="./img/twitter.png" alt="Twitter" class="logo"></a>
-            <a href="https://github.com/BeatrizCPerez/Desmos"><img src="./img/github.png" alt="Github" class="logo_grande"></a>
-            <a href="https://www.instagram.com/"><img src="./img/instagram.png" alt="Instagram" class="logo_grande"></a>
+      <div class="filter-section">
+        <h3>Valoración Alta</h3>
+        <div class="filter-options">
+          <label><input type="radio" name="rating" value="asc"> Menor a Mayor</label>
+          <label><input type="radio" name="rating" value="desc"> Mayor a Menor</label>
         </div>
+      </div>
+      <div class="filter-section">
+        <h3>Proyectos Recientes</h3>
+        <div class="filter-options">
+          <label><input type="checkbox" value="web"> Página Web</label>
+          <label><input type="checkbox" value="mobile"> Aplicación Móvil</label>
+          <label><input type="checkbox" value="backend"> Backend</label>
+          <label><input type="checkbox" value="frontend"> Frontend</label>
+          <label><input type="checkbox" value="online-store"> Tienda Online</label>
+          <label><input type="checkbox" value="Landing Page"> Landing Page</label>
+        </div>
+      </div>
+      <div class="filter-section">
+        <h3>Buscar</h3>
+        <input type="text" placeholder="Buscar...">
+        <button id="searchButton">Buscar</button>
+      </div>
+      <div class="filter-section">
+        <button id="filterButton">Filtrar</button>
+      </div>
     </div>
-    </footer>
-    <script src="script-filtro.js"></script>
+
+    <div class="info-web">
+      <div>
+        <div class="images-container">
+          <img src="./img/girl_infoweb.png" alt="Chica con portátil" class="img-girl">
+          <img src="./img/boy_infoweb.png" alt="Chico con portátil" class="img-boy">
+        </div>
+        <h2>Descubre una nueva forma de encontrar y ofrecer servicios</h2>
+        <p>Somos una plataforma online diseñada <strong>para facilitar el intercambio de servicios entre
+            profesionales</strong> de diversos sectores. Conectamos a demandantes de servicios con proveedores
+          adecuados,
+          ofreciendo una alternativa innovadora a las plataformas tradicionales de freelance.</p>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <footer class="container-footer">
+    <div class="contenido-footer">
+      <img src="./img/logo_Desmos.png" alt="Logo de la empresa" class="footer-logo">
+      <a href="terminos_y_condiciones.html" class="terms-link">©2024 Desmos | Aviso legal | Política de Privacidad |
+        Política de cookies</a>
+      <div class="social-icons">
+        <a href="https://es-es.facebook.com/"><img src="./img/facebook.png" alt="Facebook" class="logo"></a>
+        <a href="https://twitter.com/"><img src="./img/twitter.png" alt="Twitter" class="logo"></a>
+        <a href="https://github.com/BeatrizCPerez/Desmos"><img src="./img/github.png" alt="Github"
+            class="logo_grande"></a>
+        <a href="https://www.instagram.com/"><img src="./img/instagram.png" alt="Instagram" class="logo_grande"></a>
+      </div>
+    </div>
+  </footer>
+  <script src="script-filtro.js"></script>
 
 </body>
+
 </html>
