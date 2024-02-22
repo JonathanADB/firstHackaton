@@ -107,9 +107,9 @@ loginForm.addEventListener('submit', (e) =>{
         return alert('Usuario y/o contraseña incorrectos!');
     }
 
-    if (validUser.email === 'admin@gmail.com') { // Cambiar 'admin@example.com' por el email del usuario especial
-        alert('Bienvenido Administrador');
-        window.location.href = 'admin.html'; // Redirigir a una página especial para el usuario admin
+    if (validUser.email === 'fontanero@gmail.com') { // 
+        alert('Bienvenido fontanero');
+        window.location.href = 'fontanero.html'; // Redirigir a una página especial para otro tipo de usuario
      } else {
 
       alert(`Bienvenido ${validUser.name}`);
