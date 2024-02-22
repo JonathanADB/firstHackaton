@@ -27,6 +27,10 @@ La plataforma Desmons mejorará la vida de las personas al proporcionar un espac
 ✏️ FIGMA:
 https://www.figma.com/file/wkVLO1AVgxVEYMEREMARxq/Equipo28?type=design&node-id=68-789&mode=design&t=XQNM30UlQktpIpEE-0
 
+
+- TRELLO:
+  https://trello.com/b/4fQ35mDe/desmos-grupo-28)
+
 🔧 STACKS:
 HTML5
 CSS3
