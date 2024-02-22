@@ -284,10 +284,13 @@
 
 
 /* Estilos específicos para pantallas con un ancho de 755px a 1265px */
-@media only screen and (min-width: 750px) and (max-width: 1295px) {
+@media only screen and (min-width: 750px) and (max-width: 1531px) {
     .footer-logo {
         display: block;
         margin: 0 auto;
+        height: 100px;
+        padding: 10px;
+        margin-top: -50px;
       
     }
 
@@ -301,9 +304,11 @@
     .social-icons {
         text-align: center;
         margin-left: 0; /* Reinicia el margen izquierdo */
-        margin-top: 30px;
+        margin-top: 45px;
         padding: 10px;
     }
+
+
     .footer-logo-container{
        display: flex;
        height: 40px;
