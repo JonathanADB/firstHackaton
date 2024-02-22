@@ -147,6 +147,7 @@
     position:absolute;
     display: flex;
     justify-content: center;
+    
 }
 
 /* hay que manipular el video para que aparezca debajo del slogan*/
@@ -179,7 +180,7 @@
     font-size: 2rem;
     text-align: center;
     width: 60%;
-    color: orange;
+    color: white;
     background-color: transparent;
     position: absolute; 
    overflow:hidden;
@@ -410,51 +411,24 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*-------------------------- Información web ---------------------*/
 /* Estilos para escritorio */
 
 
 .info-web {
-    width: calc(100% - 250px - 40px);
-    padding: 20px;
+    width: 100%;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     flex-direction: column;
-    align-items: flex-start;
-}
-
-.info-web h1,
-.info-web p,
-.info-web h2,
-.intersection1 h1 {
-    text-align: left;
-    margin-left: 20px;
-    margin-right: 150px;
 }
 
 .info-web h1 {
-    padding-top: 60px;
+    padding-top: 5%;
     color: #0C322B;
-    margin-bottom: 40px;
+    margin-bottom: 5%;
     font-size: 50px;
+    justify-content: center;
 }
 
 .info-web p {
@@ -468,10 +442,10 @@
 .images-container {
     display: flex;
     align-items: flex-end;
-    top: 70px;
-    right: 20px;
+    right: 30px;
     float: right;
-    padding-top: 40px;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .images-container img {
@@ -484,7 +458,7 @@
 }
 
 .img-girl {
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 
 /* -----------intersección 1-------------- */
@@ -511,6 +485,10 @@
     float: left;
     padding-top: 40px;
     width: 600px;
+}
+
+.funtion-infoweb {
+    padding-bottom: 40px;
 }
 
 /* Estilos para dispositivos móviles */
