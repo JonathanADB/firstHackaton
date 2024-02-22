@@ -28,54 +28,71 @@
     </nav>
 
     <!-- Inicio filtro -->
+    <div class="container">
+        <div class="developer-filter">
+            <div class="filter-section">
+                <h3>Desarrolladores Disponibles</h3>
+            </div>
+            <div class="filter-section">
+                <h3>Por Tecnología</h3>
+                <div class="filter-options">
+                    <label><input type="checkbox" value="javascript"> JavaScript</label>
+                    <label><input type="checkbox" value="python"> Python</label>
+                    <label><input type="checkbox" value="java"> Java</label>
+                    <label><input type="checkbox" value="cpp"> C++</label>
+                    <label><input type="checkbox" value=".net"> .NET</label>
+                    <label><input type="checkbox" value="bootstrap"> Bootstrap</label>
+                    <label><input type="checkbox" value="react"> React</label>
+                    <label><input type="checkbox" value="vue"> Vue</label>
+                    <label><input type="checkbox" value="angular"> Angular</label>
+                    <label><input type="checkbox" value="cobol"> COBOL</label>
+                </div>
+            </div>
+            <div class="filter-section">
+                <h3>Valoración Alta</h3>
+                <div class="filter-options">
+                    <label><input type="radio" name="rating" value="asc"> Menor a Mayor</label>
+                    <label><input type="radio" name="rating" value="desc"> Mayor a Menor</label>
+                </div>
+            </div>
+            <div class="filter-section">
+                <h3>Proyectos Recientes</h3>
+                <div class="filter-options">
+                    <label><input type="checkbox" value="web"> Página Web</label>
+                    <label><input type="checkbox" value="mobile"> Aplicación Móvil</label>
+                    <label><input type="checkbox" value="backend"> Backend</label>
+                    <label><input type="checkbox" value="frontend"> Frontend</label>
+                    <label><input type="checkbox" value="online-store"> Tienda Online</label>
+                    <label><input type="checkbox" value="Landing Page"> Landing Page</label>
+                </div>
+            </div>
+            <div class="filter-section">
+                <h3>Buscar</h3>
+                <input type="text" placeholder="Buscar...">
+                <button id="searchButton">Buscar</button>
+            </div>
+            <div class="filter-section">
+                <button id="filterButton">Filtrar</button>
+            </div>
+        </div>
 
-    <div class="developer-filter">
-        <div class="filter-section">
-            <h3>Desarrolladores Disponibles</h3>
-        </div>
-        <div class="filter-section">
-            <h3>Por Tecnología</h3>
-            <div class="filter-options">
-                <label><input type="checkbox" id="javascriptCheckbox" value="javascript"> JavaScript</label>
-                <label><input type="checkbox" id="pythonCheckbox" value="python"> Python</label>
-                <label><input type="checkbox" id="javaCheckbox" value="java"> Java</label>
-                <label><input type="checkbox" id="cppCheckbox" value="cpp"> C++</label>
-                <label><input type="checkbox" id="dotnetCheckbox" value=".net"> .NET</label>
-                <label><input type="checkbox" id="bootstrapCheckbox" value="bootstrap"> Bootstrap</label>
-                <label><input type="checkbox" id="reactCheckbox" value="react"> React</label>
-                <label><input type="checkbox" id="vueCheckbox" value="vue"> Vue</label>
-                <label><input type="checkbox" id="angularCheckbox" value="angular"> Angular</label>
-                <label><input type="checkbox" id="cobolCheckbox" value="cobol"> COBOL</label>
+        <div class="info-web">
+            <div>
+                <div class="images-container">
+                    <img src="./img/girl_infoweb.png" alt="Chica con portátil" class="img-girl">
+                    <img src="./img/boy_infoweb.png" alt="Chico con portátil" class="img-boy">
+                </div>
+                <h1>Descubre una nueva forma de encontrar y ofrecer servicios</h1>
+                <p>Somos una plataforma online diseñada <strong>para facilitar el intercambio de servicios entre
+                        profesionales</strong> de diversos sectores. Conectamos a demandantes de servicios con
+                    proveedores
+                    profesionales</strong> de diversos sectores.</p>
+                <p>Conectamos a demandantes de servicios con proveedores
+                    adecuados,
+                    ofreciendo una alternativa innovadora a las plataformas tradicionales de freelance.</p>
             </div>
-        </div>
-        <div class="filter-section">
-            <h3>Valoración Alta</h3>
-            <div class="filter-options">
-                <label><input type="radio" name="rating" id="ascRadio" value="asc"> Menor a Mayor</label>
-                <label><input type="radio" name="rating" id="descRadio" value="desc"> Mayor a Menor</label>
-            </div>
-        </div>
-        <div class="filter-section">
-            <h3>Proyectos Recientes</h3>
-            <div class="filter-options">
-                <label><input type="checkbox" id="webCheckbox" value="web"> Página Web</label>
-                <label><input type="checkbox" id="mobileCheckbox" value="mobile"> Aplicación Móvil</label>
-                <label><input type="checkbox" id="backendCheckbox" value="backend"> Backend</label>
-                <label><input type="checkbox" id="frontendCheckbox" value="frontend"> Frontend</label>
-                <label><input type="checkbox" id="onlineStoreCheckbox" value="online-store"> Tienda Online</label>
-                <label><input type="checkbox" id="landingPageCheckbox" value="Landing Page"> Landing Page</label>
-            </div>
-        </div>
-        <div class="filter-section">
-            <h3>Buscar</h3>
-            <input type="text" id="searchInput" placeholder="Buscar...">
-            <button id="searchButton">Buscar</button>
-        </div>
-        <div class="filter-section">
-            <button id="filterButton">Filtrar</button>
         </div>
     </div>
-
     <!-- Inicio footer -->
 
 
