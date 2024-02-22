@@ -135,25 +135,61 @@
     /* Cambiado a 'auto' para ajustarse al contenido */
     align-items: center;
     color: white;
+    justify-content: center;
+    text-align: center;
 }
 
-.videoFondo_JI {
-    position: absolute;
-    z-index: -2;
-    top: 0;
+.video-container {
+    top: 0.5rem;
+    width: 99.1%;
+    max-width: 99.99%;
+    /* Ajusta el valor según tus necesidades */
+    margin: auto;
+    /* Centra el contenedor horizontalmente */
+    height: auto;
+    position:absolute;
+    display: flex;
+    justify-content: center;
 }
+
+/* hay que manipular el video para que aparezca debajo del slogan*/
+.videoFondo_JI {
+    position: relative;
+    /*Cambiado a relativo para que se ajuste al contenedor*/
+    z-index: -2;
+    max-width: 100%;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+/* ajusta el video dentro del container*/
+.video {
+    width: 100%;
+    /* Ajusta el ancho del video al 100% del contenedor */
+    height: auto;
+    /* Mantiene la proporción original del video */
+    display: block;
+    /* Elimina los espacios en blanco debajo del video */
+}
+
+/*fin de problema de ancho*/
 
 .titulo_JI {
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
     font-size: 2rem;
     line-height: 1rem;
-    margin-top: 5rem;
-
-
+    text-align: center;
+    width: 60%;
+    color: orange;
+    background-color: transparent;
+    position: absolute; 
+   overflow:hidden;
+   margin-top: 10rem;
 }
+
 
 .botonesFrase_JI {
     display: flex;
@@ -162,18 +198,15 @@
     align-items: center;
     bottom: 2rem;
     vertical-align: bottom;
+    margin-top: 40rem;
     margin-bottom: 6rem;
-
-    
-
-
-  
 }
+
+
 
 .Botones_JI {
     display: flex;
     margin: 3rem;
-
     width: 50%;
     justify-content: space-around;
 }
@@ -185,7 +218,7 @@
     color: #ffffff;
     padding: 1rem;
     background-color: #33D8B8;
-    border-radius: 1rem 2rem;
+    border-radius: 2rem;
 }
 
 .Busco_JI {
@@ -195,15 +228,10 @@
     color: #ffffff;
     padding: 1rem;
     background-color: transparent;
-    border-radius: 1rem 2rem;
+    border-radius: 2rem;
     border: 0.3rem solid #33D8B8;
 }
 
-
-
-
-
-/* //--------------Filtro---------------- */
 
 
 /*probando pop up*/
@@ -405,63 +433,9 @@
 
 
 
-/*hasta aqui poup*/
-
-
-
-.developer-filter {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    background-color: #CCCCCC;
-    width: 250px;
-}
-
-
-.filter-section {
-    margin-bottom: 20px;
-}
-
-.filter-section h3 {
-    font-size: 16px;
-    margin-bottom: 8px;
-}
-
-.filter-options label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.filter-options input {
-    margin-right: 5px;
-}
-
-.filter-options input[type="text"] {
-    width: 100%;
-    padding: 15px;
-    box-sizing: border-box;
-    margin-top: 10px;
-}
-
-#filterButton {
-    padding: 12px;
-    font-size: 16px;
-    border: none;
-    background-color: #0C322B;
-    color: #fff;
-    cursor: pointer;
-    margin-top: 10px;
-    width: 100%;
-}
-
 /*-------------------------- Información web ---------------------*/
 /* Estilos para escritorio */
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: row;
-}
+
 
 .info-web {
     width: calc(100% - 250px - 40px);
