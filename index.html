@@ -17,10 +17,10 @@
 
         <div class="nav-enlaces">
             <ul class="nav-links">
-                <!-- <li class="nav-li"><a class="inicio" href="contacto.html">Iniciar sesión</a></li> -->
+                <li class="nav-li"><a class="inicio" href="contacto.html">Iniciar sesión</a></li>
 
-                <li class="nav-li"><a class="inicio" href="#" onclick="mostrarPopup()">Iniciar sesión</a></li>
-                <div id="popup" class="popup">
+                <!-- <li class="nav-li"><a class="inicio" href="#" onclick="mostrarPopup()">Iniciar sesión</a></li> -->
+                <!-- <div id="popup" class="popup">
 
                     <div class="popup-content">
                         <video autoplay muted loop id="video-background">
@@ -61,8 +61,8 @@
                                 </form>
                             </div>
                             <!-- Botón para cerrar el popup -->
-                            <button onclick="cerrarPopup()">Cerrar</button>
-                        </div>
+                            <!-- <button onclick="cerrarPopup()">Cerrar</button> -->
+                        <!-- </div>
                     </div>
 
                     <script>
@@ -77,12 +77,11 @@
                             let popup = document.getElementById("popup");
                             popup.style.display = "none";
                         }
-                    </script>
+                    </script> -->
+<!-- 
+                </div>  -->
 
-                </div>
-
-
-
+                <li class="nav-li"><a class="contactar" href="/formulario-contacto.html">Contacto</a></li>
                 <li class="nav-li"><a class="contactar" href="/formulario-contacto.html">Contacto</a></li>
             </ul>
             <button class="nav-button" type="button">Apúntate</button>
@@ -94,18 +93,19 @@
         </div>
     </nav>
 
+
     <!--Video logotipo de fondo , primera parte verde-->
 
     <div class="primeraZonaVerde_JI">
 
-     
+
 
         <div class="video-container">
 
             <div class="titulo_JI">
-            
+
                 <h1>Donde la colaboración cobra vida</h1>
-    
+
             </div>
 
             <div class="videoFondo_JI">
@@ -113,10 +113,10 @@
                 <!--El video importado establece por defecto un ancho excesivo, hay que ajustarlo en css -->
             </div>
 
-           
+
         </div>
 
-   
+
         <div class="botonesFrase_JI">
             <h2 class="text-connect">Conectando profesionales como tú para intercambiar
                 servicios y ofertas de manera eficiente
@@ -126,49 +126,35 @@
                 <button class="Busco_JI">Busco a profesional</button>
             </div> 
         </div>
-
-
-
     </div>
 
     <!-- Inicio filtro -->
     <div class="container-filtro">
       
 
-        <div class="info-web">
-            <div>
-                <div class="images-container">
-                    <img src="./img/girl_infoweb.png" alt="Chica con portátil" class="img-girl">
-                    <img src="./img/boy_infoweb.png" alt="Chico con portátil" class="img-boy">
-                </div>
-                <h1>Descubre una nueva forma de encontrar y ofrecer servicios</h1>
-                <p>Somos una plataforma online diseñada <strong>para facilitar el intercambio de servicios entre
-                        profesionales</strong> de diversos sectores. Conectamos a demandantes de servicios con
-                    proveedores
-                    profesionales</strong> de diversos sectores.</p>
-                <p>Conectamos a demandantes de servicios con proveedores
-                    adecuados,
-                    ofreciendo una alternativa innovadora a las plataformas tradicionales de freelance.</p>
+    <div class="info-web">
+        <div class="descubrir-forma">
+            <div class="images-container">
+                <img src="./img/girl_infoweb.png" alt="Chica con portátil" class="img-girl">
+                <img src="./img/boy_infoweb.png" alt="Chico con portátil" class="img-boy">
             </div>
+            <h1>Descubre una nueva forma de encontrar y ofrecer servicios</h1>
+            <p>Somos una plataforma online diseñada <strong>para facilitar el intercambio de servicios entre
+                    profesionales</strong> de diversos sectores. Conectamos a demandantes de servicios con
+                proveedores
+                profesionales</strong> de diversos sectores.</p>
+            <p>Conectamos a demandantes de servicios con proveedores
+                adecuados,
+                ofreciendo una alternativa innovadora a las plataformas tradicionales de freelance.</p>
+        </div>
 
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+        <div class="intersection1">
+            <h1>Nuestro objetivo es simplificar conexión entre la búsqueda de profesionales y la oferta de nuevas
+                oportunidades.</h1>
+        </div>
 
-            <div class="intersection1">
-                <h1>Nuestro objetivo es simplificar conexión entre la búsqueda de profesionales y la oferta de nuevas
-                    oportunidades.</h1>
-            </div>
-
-            <br>
-            <br>
-            <br>
-
-            <div>
-                <div class="funtion-infoweb">
-                </div>
+        <div>
+            <div class="funtion-infoweb">
                 <h1>¿Cómo funciona?</h1>
                 <img src="./img/2boy_infoweb.svg" alt="2 chicos felices mirando el ordenador" class="img-2boy">
                 <div>
@@ -188,17 +174,22 @@
         </div>
     </div>
 
+
+    <!-- -------section únete (franja verde oscuro)------ -->
     <section class="unete">
         <div class="textunete">
-            <h2>Únete a Desmos hoy mismo</h2>
-            <h3>Conectando talentos, creando soluciones</h3>
-            <button>Busco a profesionales</button>
-            <button>Soy un profesional</button>
-           
+            <h2 class="unete-h2">Únete a Desmos hoy mismo</h2>
+            <h3 class="conectando-h3">Conectando talentos, creando soluciones</h3>
+            <div class="buttons">
+                <button class="soy-button">Soy un profesional</button>
+                <button class="busco-button">Busco a profesionales</button>
+            </div>
         </div>
 
-    </section <!-- -------Sección Para quien(2Cards)------ -->
+    </section>
 
+
+    <!-- -------Sección(2Cards)------ -->
 
     <div class="contenedor-cards">
         <!-- Card 1 -->
@@ -216,7 +207,9 @@
             </div>
         </div>
 
+
         <!-- Card 2 -->
+
         <div class="card">
             <img src="./img/paraprofesionales.png" alt="Imagen 2">
             <div class="descripcion">
@@ -230,6 +223,21 @@
             </div>
         </div>
     </div>
+
+
+    <!-- -------Sección final (verde claro)------ -->
+
+    <section class="conectando">
+        <div class="text-conectando">
+            <h2 class="desmos-h2">Desmos</h2>
+            <h3 class="conectando-h3">Conectando talentos, creando soluciones</h3>
+        </div>
+        </div>
+
+    </section>
+
+
+
     <!-- Inicio footer -->
 
     <footer class="container-footer">

@@ -47,7 +47,7 @@ html {
     border: 0.1rem solid #fff;
     font-size:1.7rem;
     font-weight: 300;
-    color: #aaa;
+    color: black;
     letter-spacing: 0.1rem;
     outline: none;
     border-radius: 2rem;
@@ -68,7 +68,7 @@ html {
 
 .contact-form-textarea { 
     height:20rem;
-    resize: none; /*qué ahce esto?*/
+    resize: none; /*qué hace esto?*/
 
 }
 
