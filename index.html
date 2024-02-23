@@ -83,7 +83,7 @@
 
 
 
-                <li class="nav-li"><a class="contactar" href="Formulario-contactanos-miracle/formulario-contacto.html">Contacto</a></li>
+                <li class="nav-li"><a class="contactar" href="/formulario-contacto.html">Contacto</a></li>
             </ul>
             <button class="nav-button" type="button">Apúntate</button>
         </div>
@@ -122,9 +122,9 @@
                 servicios y ofertas de manera eficiente
             </h2>
             <div class="Botones_JI">
-                <button class="soy_JI">Soy un profesional</button>
+                <button id="irASeccion" class="soy_JI">Soy un profesional</button>
                 <button class="Busco_JI">Busco a profesional</button>
-            </div>
+            </div> 
         </div>
 
 
@@ -133,52 +133,7 @@
 
     <!-- Inicio filtro -->
     <div class="container-filtro">
-        <div class="developer-filter">
-            <div class="filter-section">
-                <h3>Desarrolladores Disponibles</h3>
-            </div>
-            <div class="filter-section">
-                <h3>Por Tecnología</h3>
-                <div class="filter-options">
-                    <label><input type="checkbox" value="javascript"> JavaScript</label>
-                    <label><input type="checkbox" value="python"> Python</label>
-                    <label><input type="checkbox" value="java"> Java</label>
-                    <label><input type="checkbox" value="cpp"> C++</label>
-                    <label><input type="checkbox" value=".net"> .NET</label>
-                    <label><input type="checkbox" value="bootstrap"> Bootstrap</label>
-                    <label><input type="checkbox" value="react"> React</label>
-                    <label><input type="checkbox" value="vue"> Vue</label>
-                    <label><input type="checkbox" value="angular"> Angular</label>
-                    <label><input type="checkbox" value="cobol"> COBOL</label>
-                </div>
-            </div>
-            <div class="filter-section">
-                <h3>Valoración Alta</h3>
-                <div class="filter-options">
-                    <label><input type="radio" name="rating" value="asc"> Menor a Mayor</label>
-                    <label><input type="radio" name="rating" value="desc"> Mayor a Menor</label>
-                </div>
-            </div>
-            <div class="filter-section">
-                <h3>Proyectos Recientes</h3>
-                <div class="filter-options">
-                    <label><input type="checkbox" value="web"> Página Web</label>
-                    <label><input type="checkbox" value="mobile"> Aplicación Móvil</label>
-                    <label><input type="checkbox" value="backend"> Backend</label>
-                    <label><input type="checkbox" value="frontend"> Frontend</label>
-                    <label><input type="checkbox" value="online-store"> Tienda Online</label>
-                    <label><input type="checkbox" value="Landing Page"> Landing Page</label>
-                </div>
-            </div>
-            <div class="filter-section">
-                <h3>Buscar</h3>
-                <input type="text" placeholder="Buscar...">
-                <button id="searchButton">Buscar</button>
-            </div>
-            <div class="filter-section">
-                <button id="filterButton">Filtrar</button>
-            </div>
-        </div>
+      
 
         <div class="info-web">
             <div>
@@ -237,8 +192,9 @@
         <div class="textunete">
             <h2>Únete a Desmos hoy mismo</h2>
             <h3>Conectando talentos, creando soluciones</h3>
-            <button>Soy un profesional</button>
             <button>Busco a profesionales</button>
+            <button>Soy un profesional</button>
+           
         </div>
 
     </section <!-- -------Sección Para quien(2Cards)------ -->
@@ -246,7 +202,7 @@
 
     <div class="contenedor-cards">
         <!-- Card 1 -->
-        <div class="card">
+        <div class="card" id="tarjetaProfesionales">
             <img src="./img/buscarprofesionales.png" alt="Imagen 1">
             <div class="descripcion">
                 <h2 class="h2cards">Para quien busca profesionales</h2>
@@ -255,7 +211,8 @@
                     <li>Publica tus solicitudes y recibe ofertas competitivas en tiempo récord</li>
                     <li>Amplía tu red de contactos profesionales y accede a oportunidades exclusivas.</li>
                 </ul>
-                <button class="boton-circular" type="button">Soy un profesional</button>
+                <button class="boton-circular" type="button"><a href="/tarjetaSoy.html">Busco Profesional</a></button>
+                </a>
             </div>
         </div>
 
@@ -269,7 +226,7 @@
                     <li>Administra tus proyectos y comunicaciones de manera centralizada y eficiente.</li>
                     <li>Encuentra nuevos retos.</li>
                 </ul>
-                <button class="boton-circular-dos" type="button">Soy un profesional</button>
+                <button id="seccionDestino" class="boton-circular-dos" type="button"><a href="/tarjetaSoy.html">Soy un Profesional</a></button>
             </div>
         </div>
     </div>
@@ -296,6 +253,7 @@
     </footer>
 
     <script src="./js/navbar.js"></script>
+    <script src="./js/tarjetas.js"></script>
 
 
 </body>

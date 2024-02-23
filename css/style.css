@@ -1,8 +1,7 @@
 .navbar {
     background-color: #0C322B;
     width: 100%;
-    height: 50%;
-    /*antes estaba en 50px*/
+    height: 50px; /* Puedes ajustar la altura según tus necesidades */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -10,13 +9,19 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: red;
-    /*pruebas de longitud y cajas padre*/
+    margin: 0; /* Asegúrate de que no haya márgenes en la barra de navegación */
 }
+
+/* También asegúrate de que el cuerpo no tenga márgenes ni relleno */
+body {
+    margin: 0;
+    padding: 0;
+}
+
 
 .marca {
     margin-left: 98px;
-    background-color: black;
+   
 }
 
 .nav-enlaces {
