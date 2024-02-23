@@ -9,7 +9,7 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color:#0C322B;
+    background-color: #0C322B;
 }
 
 .marca {
@@ -73,7 +73,7 @@
     margin-right: 30px;
 }
 
-.burger > div {
+.burger>div {
     height: 4px;
     background-color: #33D8B8;
 }
@@ -98,7 +98,7 @@
         position: absolute;
         right: 8px;
         top: 80px;
-        background-color:#0C322B;
+        background-color: #0C322B;
         width: 150px;
         height: 200px;
         padding-bottom: 30px;
@@ -144,10 +144,9 @@
     margin: auto;
     /* Centra el contenedor horizontalmente */
     height: auto;
-    position:absolute;
+    position: absolute;
     display: flex;
     justify-content: center;
-    
 }
 
 /* hay que manipular el video para que aparezca debajo del slogan*/
@@ -159,16 +158,24 @@
     overflow: hidden;
     width: 100%;
     height: auto;
+    padding-bottom: 56.25%;
+    top: 0 auto;
+    margin: 0;
 }
 
 /* ajusta el video dentro del container*/
-.video {
+.videoFondo_JI video {
     width: 100%;
     /* Ajusta el ancho del video al 100% del contenedor */
-    height: auto;
+
     /* Mantiene la proporción original del video */
     display: block;
     /* Elimina los espacios en blanco debajo del video */
+
+    top: 0 auto;
+    margin-top: 0;
+
+
 }
 
 /*fin de problema de ancho*/
@@ -178,32 +185,30 @@
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+    margin-top: 5rem;
     text-align: center;
-    width: 60%;
-    color: white;
+    width: 80%;
+    color: orange;
     background-color: transparent;
-    position: absolute; 
-   overflow:hidden;
-   margin-top: 10rem;
-}
+    position: absolute;
+    overflow: hidden;
 
+}
 
 .botonesFrase_JI {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    bottom: 2rem;
+    bottom: 13%;
     vertical-align: bottom;
-    margin-top: 40rem;
-    margin-bottom: 6rem;
+    margin-top: 35%;
+    color: white;
 }
-
-
 
 .Botones_JI {
     display: flex;
-    margin: 3rem;
+    margin: 10%;
     width: 50%;
     justify-content: space-around;
 }
@@ -211,8 +216,8 @@
 .soy_JI {
     text-decoration: none;
     font-weight: 600;
-    font-size: 20px;
-    color: #ffffff;
+    font-size: 1rem;
+    color: white;
     padding: 1rem;
     background-color: #33D8B8;
     border-radius: 2rem;
@@ -221,12 +226,40 @@
 .Busco_JI {
     text-decoration: none;
     font-weight: 600;
-    font-size: 20px;
-    color: #ffffff;
+    font-size: 1rem;
+    color: white;
     padding: 1rem;
     background-color: transparent;
     border-radius: 2rem;
     border: 0.3rem solid #33D8B8;
+}
+
+
+/*-------------responsive parte video-------*/
+
+@media screen and (max-width: 1500px) {
+
+    .titulo_JI {
+        font-size: 1rem;
+        margin-top: 3rem;
+    }
+
+    .botonesFrase_JI {
+        background-color: #0C322B;
+        width: 100%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 550px) {
+    .titulo_JI {
+        font-size: 0.7rem;
+        margin-top: 3rem;
+    }
+
+
 }
 
 
@@ -236,7 +269,7 @@
 .popup {
     display: none;
     /* Por defecto, el popup estará oculto */
-    /* position: fixed;
+/* position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -254,7 +287,7 @@
 
     border-radius: 5px;
     text-align: center;
-} */ 
+} */
 
 /*aqui empieza el css del login*/
 #video-background {
@@ -541,9 +574,10 @@
         padding-top: 20px;
     }
 
-    .container-filtro{
-        display:none;
+    .container-filtro {
+        display: none;
     }
+
     .img-girl {
         padding-bottom: 20px;
     }
