@@ -17,10 +17,10 @@
 
         <div class="nav-enlaces">
             <ul class="nav-links">
-                <!-- <li class="nav-li"><a class="inicio" href="contacto.html">Iniciar sesión</a></li> -->
+                <li class="nav-li"><a class="inicio" href="contacto.html">Iniciar sesión</a></li>
 
-                <li class="nav-li"><a class="inicio" href="#" onclick="mostrarPopup()">Iniciar sesión</a></li>
-                <div id="popup" class="popup">
+                <!-- <li class="nav-li"><a class="inicio" href="#" onclick="mostrarPopup()">Iniciar sesión</a></li> -->
+                <!-- <div id="popup" class="popup">
 
                     <div class="popup-content">
                         <video autoplay muted loop id="video-background">
@@ -61,8 +61,8 @@
                                 </form>
                             </div>
                             <!-- Botón para cerrar el popup -->
-                            <button onclick="cerrarPopup()">Cerrar</button>
-                        </div>
+                            <!-- <button onclick="cerrarPopup()">Cerrar</button> -->
+                        <!-- </div>
                     </div>
 
                     <script>
@@ -77,13 +77,12 @@
                             let popup = document.getElementById("popup");
                             popup.style.display = "none";
                         }
-                    </script>
+                    </script> -->
+<!-- 
+                </div>  -->
 
-                </div>
-
-
-
-                <li class="nav-li"><a class="contactar" href="#">Contacto</a></li>
+                
+                <li class="nav-li"><a class="contactar" href="/formulario-contacto.html">Contacto</a></li>
             </ul>
             <button class="nav-button" type="button">Apúntate</button>
         </div>
@@ -93,7 +92,7 @@
             <div class="burger-last"></div>
         </div>
     </nav>
-    
+
 
     <!--Video logotipo de fondo , primera parte verde-->
 
@@ -123,50 +122,39 @@
                 servicios y ofertas de manera eficiente
             </h2>
             <div class="Botones_JI">
-                <button class="soy_JI">Soy un profesional</button>
+                <button id="irASeccion" class="soy_JI">Soy un profesional</button>
                 <button class="Busco_JI">Busco a profesional</button>
-            </div>
+            </div> 
         </div>
     </div>
 
+    <!-- Inicio filtro -->
+    <div class="container-filtro">
+      
 
-
-    </div>
-
-        <div class="info-web">
-            <div>
-                <div class="images-container">
-                    <img src="./img/girl_infoweb.png" alt="Chica con portátil" class="img-girl">
-                    <img src="./img/boy_infoweb.png" alt="Chico con portátil" class="img-boy">
-                </div>
-                <h1>Descubre una nueva forma de encontrar y ofrecer servicios</h1>
-                <p>Somos una plataforma online diseñada <strong>para facilitar el intercambio de servicios entre
-                        profesionales</strong> de diversos sectores. Conectamos a demandantes de servicios con
-                    proveedores
-                    profesionales</strong> de diversos sectores.</p>
-                <p>Conectamos a demandantes de servicios con proveedores
-                    adecuados,
-                    ofreciendo una alternativa innovadora a las plataformas tradicionales de freelance.</p>
+    <div class="info-web">
+        <div class="descubrir-forma">
+            <div class="images-container">
+                <img src="./img/girl_infoweb.png" alt="Chica con portátil" class="img-girl">
+                <img src="./img/boy_infoweb.png" alt="Chico con portátil" class="img-boy">
             </div>
+            <h1>Descubre una nueva forma de encontrar y ofrecer servicios</h1>
+            <p>Somos una plataforma online diseñada <strong>para facilitar el intercambio de servicios entre
+                    profesionales</strong> de diversos sectores. Conectamos a demandantes de servicios con
+                proveedores
+                profesionales</strong> de diversos sectores.</p>
+            <p>Conectamos a demandantes de servicios con proveedores
+                adecuados,
+                ofreciendo una alternativa innovadora a las plataformas tradicionales de freelance.</p>
+        </div>
 
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+        <div class="intersection1">
+            <h1>Nuestro objetivo es simplificar conexión entre la búsqueda de profesionales y la oferta de nuevas
+                oportunidades.</h1>
+        </div>
 
-            <div class="intersection1">
-                <h1>Nuestro objetivo es simplificar conexión entre la búsqueda de profesionales y la oferta de nuevas
-                    oportunidades.</h1>
-            </div>
-
-            <br>
-            <br>
-            <br>
-
-            <div>
-                <div class="funtion-infoweb">
-                </div>
+        <div>
+            <div class="funtion-infoweb">
                 <h1>¿Cómo funciona?</h1>
                 <img src="./img/2boy_infoweb.svg" alt="2 chicos felices mirando el ordenador" class="img-2boy">
                 <div>
@@ -184,6 +172,7 @@
                 </div>
             </div>
         </div>
+    </div>
 
 
     <!-- -------section únete (franja verde oscuro)------ -->
@@ -204,7 +193,7 @@
 
     <div class="contenedor-cards">
         <!-- Card 1 -->
-        <div class="card">
+        <div class="card" id="tarjetaProfesionales">
             <img src="./img/buscarprofesionales.png" alt="Imagen 1">
             <div class="descripcion">
                 <h2 class="h2cards">Para quien busca profesionales</h2>
@@ -213,7 +202,8 @@
                     <li>Publica tus solicitudes y recibe ofertas competitivas en tiempo récord</li>
                     <li>Amplía tu red de contactos profesionales y accede a oportunidades exclusivas.</li>
                 </ul>
-                <button class="boton-circular" type="button">Soy un profesional</button>
+                <button class="boton-circular" type="button"><a href="/tarjetaSoy.html">Busco Profesional</a></button>
+                </a>
             </div>
         </div>
 
@@ -229,7 +219,7 @@
                     <li>Administra tus proyectos y comunicaciones de manera centralizada y eficiente.</li>
                     <li>Encuentra nuevos retos.</li>
                 </ul>
-                <button class="boton-circular-dos" type="button">Soy un profesional</button>
+                <button id="seccionDestino" class="boton-circular-dos" type="button"><a href="/tarjetaSoy.html">Soy un Profesional</a></button>
             </div>
         </div>
     </div>
@@ -271,6 +261,7 @@
     </footer>
 
     <script src="./js/navbar.js"></script>
+    <script src="./js/tarjetas.js"></script>
 
 
 </body>
