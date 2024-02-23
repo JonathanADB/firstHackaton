@@ -42,7 +42,7 @@ https://github.com/JonathanADB
 https://github.com/BeatrizCPerez
 https://github.com/AnaLucena
 https://github.com/stef-ania
-https://github.com/MiracleMalachi
+[https://github.com/MiracleMalachi](https://github.com/Malachi1998)
 https://github.com/AlbaPardo
 https://github.com/Jonathan
 
