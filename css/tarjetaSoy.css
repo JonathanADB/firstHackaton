@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #0C322B;
-    /* Fondo azul */
 }
 
 .title {
@@ -35,7 +34,6 @@ body {
     cursor: pointer;
     transition: background-color 0.3s;
     background-color: #fff;
-    /* Fondo blanco */
     -webkit-box-shadow: 11px 18px 20px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 11px 18px 20px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 11px 18px 20px 0px rgba(0, 0, 0, 0.75);
@@ -47,41 +45,24 @@ body {
 
 .producto img {
     max-width: 8rem;
-    /* Ajusta el tamaño máximo de la imagen */
     border-radius: 8px;
-    /* Añade bordes redondeados a la imagen */
 }
 
 .contact-btn {
-
     width: 8rem;
     height: 3rem;
     background-color: #33D8B8;
-    /* Color azul suave */
     border: 0.2rem solid #C0EEE2;
-    /* Borde de 0.5rem con color gris oscuro */
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    /* Sombra con desplazamiento de 2px en x y 2px en y, desenfoque de 4px y color negro con opacidad 0.3 */
-
     transition: background-color 0.3s ease;
-    /* Transición de color de fondo durante 0.3 segundos con efecto suave */
-
-    /* Estilos adicionales según tus necesidades */
     color: black;
-    /* Color del texto */
     font-size: 1rem;
-    /* Tamaño de fuente */
     text-align: center;
     line-height: 2rem;
-    /* Alineación vertical del texto en el centro */
-
-
-
 }
 
 .contact-btn :hover {
     background-color: #0C322B;
-    /* Color verde suave al pasar el ratón */
 }
 
 .volver-btn {
@@ -91,5 +72,4 @@ body {
     justify-content: center;
     text-align: center;
     margin: 2rem 3rem;
-    
 }

@@ -1,4 +1,3 @@
-/*funcion para mover la animacion del formulario*/
 
 document.getElementById("btn_iniciarSesion").addEventListener("click", iniciarSesion);
 document.getElementById("btn_registrarse").addEventListener("click", register);
@@ -27,7 +26,6 @@ function iniciarSesion(){
 
     if(window.innerWidth > 850){
          
-   
     formulario_register.style.display = "none";
     contenedor_loginRegister.style.left = "10px"
     formulario_login.style.display = "block";
@@ -63,10 +61,6 @@ function register(){
    }
 }
 
-
-/*a partir de aqui es el funcionamiento del registro y la autentificacion
-lo anterior es solo animacion */
-/////////////////**********trabajando con registro
 const signupForm = document.querySelector(".formulario_register" )
 signupForm.addEventListener('submit', (e) =>{
     e.preventDefault();
@@ -75,7 +69,6 @@ signupForm.addEventListener('submit', (e) =>{
     const usuario = document.querySelector('#usuario').value;
     const password = document.querySelector('#password').value;
     
-    // Verificar si hay datos almacenados en localStorage
     const storedUsers = localStorage.getItem('users');
     const Users = storedUsers ? JSON.parse(storedUsers) : [];
     
@@ -88,12 +81,10 @@ signupForm.addEventListener('submit', (e) =>{
     localStorage.setItem('users', JSON.stringify(Users))
     alert('Registro Exitoso!')
 
-    //redirecionar (tengo que ponerla web nuestra)
     window.location.href = 'index.html'
 
  });
 
- //*************trabajando con login 
  const loginForm = document.querySelector('.formulario_login')
 loginForm.addEventListener('submit', (e) =>{
     e.preventDefault()
@@ -107,9 +98,9 @@ loginForm.addEventListener('submit', (e) =>{
         return alert('Usuario y/o contraseña incorrectos!');
     }
 
-    if (validUser.email === 'fontanero@gmail.com') { // 
+    if (validUser.email === 'fontanero@gmail.com') { 
         alert('Bienvenido fontanero');
-        window.location.href = 'fontanero.html'; // Redirigir a una página especial para otro tipo de usuario
+        window.location.href = 'fontanero.html'; 
      } else {
 
       alert(`Bienvenido ${validUser.name}`);
@@ -117,28 +108,3 @@ loginForm.addEventListener('submit', (e) =>{
      }
   
 });
-
-
-
-/* Este codigo es para acceder al local storage y borrar segun la posicion del objeto del array
-
-/ Obtener el array de usuarios del localStorage
-const storedUsers = localStorage.getItem('users');
-const Users = storedUsers ? JSON.parse(storedUsers) : [];
-
-// Supongamos que quieres eliminar la cuenta en la posición 2 del array (índice 1)
-const indiceAEliminar = 1; // Índice de la cuenta a eliminar
-
-// Verificar si el índice está dentro del rango del array
-if (indiceAEliminar >= 0 && indiceAEliminar < Users.length) {
-    // Eliminar la cuenta del array
-    Users.splice(indiceAEliminar, 1);
-
-    // Guardar el array modificado de nuevo en localStorage
-    localStorage.setItem('users', JSON.stringify(Users));
-
-    console.log('La cuenta ha sido eliminada correctamente.');
-} else {
-    console.log('El índice especificado está fuera del rango del array de usuarios.');
-}
-*/
