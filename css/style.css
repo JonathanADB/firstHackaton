@@ -854,3 +854,78 @@
         padding: 10px;
     }
 }
+
+
+
+.contenedor-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    box-sizing: border-box;
+    width: 45%;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #F8FAFC;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.descripcion {
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.boton-circular,
+.boton-circular-dos {
+    width: 200px;
+    height: 35px;
+    background-color: #33D8B8;
+    color: #0C322B;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: 5%;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.boton-circular:hover,
+.boton-circular-dos:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.boton-circular {
+    margin-top: 4%;
+}
+
+.boton-circular-dos {
+    background-color: #0C322B;
+    color: white;
+}
+
+.h2cards {
+    margin-left: 3%;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+
