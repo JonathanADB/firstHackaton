@@ -1,6 +1,7 @@
 GRUPO 28 (HACKATHON F.5 2024)
 
 📝 PROYECTO "DESMOS"
+https://myprimerajakaton.netlify.app/
 
 ¿En qué consiste nuestro proyecto?
 Nos pidieron crear un espacio de encuentro virtual entre emprendedores y desarrolladores web en el que se visualizan, de un lado, servicios; y de  otro proyectos. La Marketplace esta diseñada para el intercambio de servicios de programación a cambio de un precio. Los programadores podrán tanto ofrecer sus servicios como demandar propuestas de valor o proyectos en los que trabajar. En todo caso, cualquier persona podrá demandar servicios de desarrollo web. A pesar de ser una marketplace de servicios de programación y desarrollo, será también un espacio de interconexión (networking) entre profesionales.
